@@ -1,42 +1,8 @@
-# path-parse [![Build Status](https://travis-ci.org/jbgutierrez/path-parse.svg?branch=master)](https://travis-ci.org/jbgutierrez/path-parse)
+# React + Vite
 
-> Node.js [`path.parse(pathString)`](https://nodejs.org/api/path.html#path_path_parse_pathstring) [ponyfill](https://ponyfill.com).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Install
+Currently, two official plugins are available:
 
-```
-$ npm install --save path-parse
-```
-
-## Usage
-
-```js
-var pathParse = require('path-parse');
-
-pathParse('/home/user/dir/file.txt');
-//=> {
-//       root : "/",
-//       dir : "/home/user/dir",
-//       base : "file.txt",
-//       ext : ".txt",
-//       name : "file"
-//   }
-```
-
-## API
-
-See [`path.parse(pathString)`](https://nodejs.org/api/path.html#path_path_parse_pathstring) docs.
-
-### pathParse(path)
-
-### pathParse.posix(path)
-
-The Posix specific version.
-
-### pathParse.win32(path)
-
-The Windows specific version.
-
-## License
-
-MIT © [Javier Blanco](http://jbgutierrez.info)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
